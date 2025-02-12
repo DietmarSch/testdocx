@@ -92,8 +92,9 @@ async function main() {
     const pdfBuffer = await convertToPdf(file);
 
     // Konvertierte Datei speichern
-    fs.writeFileSync(outputPath, pdfBuffer);
+    await fs.writeFileSync(outputPath, pdfBuffer);
     console.log("Konvertierung erfolgreich!");
+    console.log('pdf existiert: ', fs.existsSync(outputPath))
   } catch (err) {
     console.log("Fehler:", err);
   }

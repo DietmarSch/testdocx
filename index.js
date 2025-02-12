@@ -4,6 +4,7 @@ const path = require("path");
 
 // Pfad zur Eingabedatei
 const inputPath = path.join(__dirname, "input.docx");
+console.log({ inputPath });
 // Pfad zur Ausgabedatei
 const outputPath = path.join(__dirname, "output.pdf");
 

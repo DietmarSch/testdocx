@@ -20,6 +20,7 @@ function convertToPdf(inputBuffer) {
 
 async function main() {
   try {
+    console.log("inside main in index.js");
     // Pfad zur Eingabedatei
     const inputPath = path.join(__dirname, "input.docx");
     console.log({ inputPath }, process.env.LIBREOFFICE_PATH);

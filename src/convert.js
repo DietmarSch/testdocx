@@ -72,6 +72,7 @@ function convertToPdf(inputBuffer) {
 
 async function main() {
   try {
+    console.log("inside main in src / convert.js");
     // Pfad zur Eingabedatei
     const inputPath = path.join(__dirname, "input.docx");
     console.log({ inputPath });
@@ -94,7 +95,7 @@ async function main() {
     // Konvertierte Datei speichern
     await fs.writeFileSync(outputPath, pdfBuffer);
     console.log("Konvertierung erfolgreich!");
-    console.log('pdf existiert: ', fs.existsSync(outputPath))
+    console.log("pdf existiert: ", fs.existsSync(outputPath));
   } catch (err) {
     console.log("Fehler:", err);
   }

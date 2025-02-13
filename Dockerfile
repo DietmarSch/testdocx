@@ -20,4 +20,4 @@ RUN npm install
 COPY . .
 
 # Startbefehl
-CMD ["node", "src/index.js"]
+CMD ["node", "src/convert.js"]
